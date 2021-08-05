@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <title>Weather API</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="app-title">
+            <div class="Iam">
+                <b>
+                  <div class="innerIam">
+                    <i class="fas fa-bolt"></i><br /> 
+                    <i class="fas fa-wind"></i><br />
+                    <i class="fas fa-smog"></i><br />
+                    <i class="fas fa-cloud"></i><br />
+                    <i class="fas fa-sun"></i>
+                    </div>
+                </b>
+                <h3>Weather Dashboard</h3>
+            </div>
+        </h1>
+    </header>
+    <main class="flex-row justify-space-between">
+        <div class="col-12 col-md-4">
+
+            <div class="card">
+                <form id="user-form" class="card-body">
+                    <h3 class="card-header text-uppercase">City:</h3>
+                    <input type="text" placeholder="Enter the city" class="input_text form-control" id="city">
+                    <button type="submit" class="btn btn-primary submit" id="submit">Get The Current Weather</button>
+                </form>
+            </div>
+
+            <div class="card card-body">
+                <h3 class="card-header text-uppercase"><span id="todo-count">0</span> recently viewed cities.</h3>
+                <ul id="city-list" class="city-list text-uppercase"></ul>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-8" id="weatherConditions">
+            <h2 class="subtitle">Showing the weather for<span id="weather-search-term"></span></h2>
+            <h1><div id="location"></div></h1>
+            <h1 id="temp"></h1>
+            <h3><div id="description"></div></h3>
+        </div>
+    </main>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/a3be47f79a.js" crossorigin="anonymous"></script>
+    <!-- 
+    <script type="text/javascript" src="assets/js/script.js"></script>
+     -->
+     <script src="./assets/js/script.js"></script>
+     <script src="./assets/js/localStorage.js"></script>
+
+
+
+
+
+</body>
+</html>
